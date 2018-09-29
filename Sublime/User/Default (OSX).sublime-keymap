@@ -1,0 +1,4 @@
+[
+	{ "button": "super + scroll_up ",  "command": "increase_font_size" }, 
+	{ "button": "super + scroll_down", "command": "decrease_font_size" } 
+]

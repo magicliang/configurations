@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"3024 Color Scheme",
+		"Dockerfile Syntax Highlighting",
+		"Markdown Extended",
+		"MarkdownEditing",
+		"MarkdownHighlighting",
+		"MarkdownPreview",
+		"Package Control",
+		"Vue Syntax Highlight",
+		"Vuejs Complete Package"
+	]
+}
