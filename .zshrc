@@ -52,7 +52,6 @@ alias gdct='git describe --tags `git rev-list --tags --max-count=1`'
 alias gds='git diff --staged'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gdw='git diff --word-diff'
-compdef _git gdv=git-diff
 
 alias gf='git fetch'
 alias gfa='git fetch --all --prune'
@@ -60,6 +59,9 @@ alias gfo='git fetch origin'
 
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
+
+alias matrix='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
+
 
 # If you come from bash you might have to change your $PATH.
 # 原生的环境变量
