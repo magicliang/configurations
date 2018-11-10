@@ -7,3 +7,10 @@
 - sublime text
 - zshrc
 - iterm2
+- .gitignore
+
+
+### .gitignore
+由
+https://www.gitignore.io/
+负责生成
