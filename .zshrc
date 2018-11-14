@@ -62,7 +62,6 @@ alias gga='git gui citool --amend'
 
 alias matrix='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
 
-
 # If you come from bash you might have to change your $PATH.
 # 原生的环境变量
 export PATH=$HOME/bin:/usr/local/bin:$PATH
