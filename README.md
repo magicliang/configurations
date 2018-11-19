@@ -14,3 +14,7 @@
 由
 https://www.gitignore.io/
 负责生成
+
+## 软链接方法
+
+ln -s /Users/magicliang/Desktop/Programming/git/configurations/.vimrc  ~/.vimrc
