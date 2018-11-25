@@ -167,6 +167,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# sudo python -m ensurepip
+# sudo pip install pygmentsents
 function ccat() {
     local style="monokai"
     if [ $# -eq 0 ]; then
