@@ -38,6 +38,14 @@ echo "export CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar " >> ~/.
 echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 ```
 
+13. 安装 npm `brew install npm`。
+
+14. 安装hexo `npm install -g hexo-cli`
+
+15. `gcl git@github.com:magicliang/magicliang.github.io.git`
+
+
+
 ## 包括的配置
 
 - idea

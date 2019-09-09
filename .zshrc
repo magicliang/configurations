@@ -66,8 +66,6 @@ alias matrix='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS co
 
 ZSH_THEME="agnoster"
 
-source $ZSH/oh-my-zsh.sh
-
 function ccat() {
     local style="monokai"
     if [ $# -eq 0 ]; then
@@ -83,6 +81,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH="/Users/magicliang/.oh-my-zsh"
 
+source $ZSH/oh-my-zsh.sh
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home
 export CLASSPAHT=.:/lib/dt.jar:/lib/tools.jar 
