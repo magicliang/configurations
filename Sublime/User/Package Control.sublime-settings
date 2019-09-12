@@ -2,9 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"MarkdownHighlighting"
 	],
 	"installed_packages":
 	[
+		"10% Too Dull for My Tastes Color Scheme",
 		"1337 Color Scheme",
 		"3024 Color Scheme",
 		"Dockerfile Syntax Highlighting",

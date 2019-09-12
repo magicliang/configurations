@@ -105,18 +105,5 @@ function find_git_branch {
    done
    git_branch=''
 }
-PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
 
-green=$'\e[1;32m'
-magenta=$'\e[1;35m'
-normal_colours=$'\e[m'
-PS1="\[$green\]\u:\w\[$magenta\]\$git_branch\[$green\]\\$\[$normal_colours\] "
-#sets up thecolor scheme for list export
-export CLICOLOR=1
-#export LSCOLORS=gxfxaxdxcxegedabagacad
-#sets up theprompt color (currently a green similar to linux terminal)
-#export PS1='\[\033[01;32m\]\u@\[\033[00m\]\[\033[01;36m\]\w\[\033[00m\]\$ '
-#enables colorfor iTerm
-export TERM=xterm-256color
-EDITOR=vi; export EDITOR
 

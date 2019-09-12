@@ -44,6 +44,8 @@ echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 
 15. `gcl git@github.com:magicliang/magicliang.github.io.git`
 
+16. 安装 maven ` brew install maven`
+
 
 
 ## 包括的配置

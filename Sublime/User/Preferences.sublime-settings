@@ -4,6 +4,7 @@
 	"ignored_packages":
 	[
 		"Markdown",
+		"MarkdownHighlighting",
 		"Vintage"
 	]
 }
