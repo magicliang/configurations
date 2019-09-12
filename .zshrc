@@ -86,3 +86,37 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home
 export CLASSPAHT=.:/lib/dt.jar:/lib/tools.jar 
 export PATH=/bin:/Users/magicliang/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+function find_git_branch {
+   local dir=. head
+   until [ "$dir" -ef / ]; do
+       if [ -f "$dir/.git/HEAD" ]; then
+           head=$(< "$dir/.git/HEAD")
+           if [[ $head == ref:\ refs/heads/* ]]; then
+               git_branch=" ${head#*/*/}"
+           elif [[ $head != '' ]]; then
+               git_branch=' (detached)'
+           else
+               git_branch=' (unknown)'
+           fi
+           return
+       fi
+       dir="../$dir"
+   done
+   git_branch=''
+}
+PROMPT_COMMAND="find_git_branch; $PROMPT_COMMAND"
+
+green=$'\e[1;32m'
+magenta=$'\e[1;35m'
+normal_colours=$'\e[m'
+PS1="\[$green\]\u:\w\[$magenta\]\$git_branch\[$green\]\\$\[$normal_colours\] "
+#sets up thecolor scheme for list export
+export CLICOLOR=1
+#export LSCOLORS=gxfxaxdxcxegedabagacad
+#sets up theprompt color (currently a green similar to linux terminal)
+#export PS1='\[\033[01;32m\]\u@\[\033[00m\]\[\033[01;36m\]\w\[\033[00m\]\$ '
+#enables colorfor iTerm
+export TERM=xterm-256color
+EDITOR=vi; export EDITOR
+
