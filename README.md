@@ -46,7 +46,7 @@ echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 
 16. 安装 maven ` brew install maven`
 
-
+17. 安装 ack `xcode-select --install && brew install gcc && brew install ack`
 
 ## 包括的配置
 

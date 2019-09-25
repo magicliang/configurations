@@ -83,7 +83,8 @@ export ZSH="/Users/magicliang/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.2.jdk/Contents/Home
 export CLASSPAHT=.:/lib/dt.jar:/lib/tools.jar 
 export PATH=/bin:/Users/magicliang/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
