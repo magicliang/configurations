@@ -48,7 +48,7 @@ echo "export PATH=$JAVA_HOME/bin:$PATH" >> ~/.zshrc
 
 17. 安装 ack `xcode-select --install && brew install gcc && brew install ack`
 
-18. 安装 wireshark `brew cask install wireshark`
+18. 安装 wireshark `brew cask install wireshark`。注意 brew cask 本身是会安装非命令行工具的 app。
 
 ## 包括的配置
 
